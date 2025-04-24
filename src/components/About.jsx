@@ -1,5 +1,5 @@
 import { CardBody, CardContainer, CardItem } from "./ui/3DCard"; // ✅ import your Aceternity UI 3D card components
-import profilePic from "../assets/chaihut-bg-main.png"; // ⛳ Replace with your own photo later
+import profilePic from "/hero-img.png"; // ⛳ Replace with your own photo later
 
 const About = () => {
   return (

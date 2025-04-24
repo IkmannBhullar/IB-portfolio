@@ -4,6 +4,7 @@ import Spotlight from "./ui/Spotlight";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
+
 const Hero = () => {
   return (
     <section
@@ -47,7 +48,8 @@ const Hero = () => {
         className="mt-6 scale-[0.95] md:scale-100"
       >
         <MacbookScroll
-          src="/src/assets/hero-img.png"
+          src="/hero-img.png"
+          alt="Ikmann Bhullar"
           showGradient
         />
       </motion.div>
