@@ -3,9 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   SiReact, SiTailwindcss, SiJavascript, SiTypescript, SiNodedotjs,
   SiExpress, SiMongodb, SiFirebase, SiVite, SiFramer, SiGit,
-  SiFigma, SiPostman, SiHtml5, SiCss3
+  SiFigma, SiPostman, SiHtml5, SiCss3 , SiAngular , SiPython 
 } from 'react-icons/si';
-import { BackgroundBeamsWithCollision } from './ui/BackgroundBeamsWithCollision'; // ✅ adjust path as needed
+
+import { FaJava } from "react-icons/fa";
+
+import { BackgroundBeamsWithCollision } from './ui/BackgroundBeamsWithCollision';
 
 const proficient = [
   { name: 'React', icon: SiReact, color: 'text-sky-500', desc: 'Component-based frontend framework' },
@@ -17,6 +20,9 @@ const proficient = [
   { name: 'Git', icon: SiGit, color: 'text-orange-500', desc: 'Version control system' },
   { name: 'HTML5', icon: SiHtml5, color: 'text-orange-600', desc: 'Markup language for web structure' },
   { name: 'CSS3', icon: SiCss3, color: 'text-blue-400', desc: 'Stylesheet language for web presentation' },
+  { name: 'Angular', icon: SiAngular, color: 'text-red-400', desc: 'component-based framework for building web applications' },
+  { name: 'Python', icon: SiPython, color: 'text-yellow-400', desc: 'general-purpose programming language known for its readability and versatility' },
+  { name: 'Java', icon: FaJava, color: 'text-blue-400', desc: 'Object-oriented programming language' },
 ];
 
 const learning = [
@@ -33,7 +39,7 @@ const SkillCard = ({ name, Icon, color, desc, delay }) => {
 
   return (
     <motion.div
-      className={`w-48 bg-slate-900 dark:bg-slate-800 border border-purple-600 p-4 rounded-2xl shadow-xl hover:shadow-purple-500/60 cursor-pointer relative z-10 group transition duration-300`}
+      className={`w-48 bg-slate-900 dark:bg-slate-800 border border-purple-600 p-2 rounded-2xl shadow-xl hover:shadow-purple-500/60 cursor-pointer relative z-10 group transition duration-300`}
       whileHover={{ scale: 1.05 }}
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -47,7 +53,7 @@ const SkillCard = ({ name, Icon, color, desc, delay }) => {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="absolute left-1/2 -translate-x-1/2 bottom-[-100px] w-56 bg-slate-950 text-white text-xs px-4 py-3 rounded-xl border border-purple-700 z-20 shadow-lg"
+            className="absolute md:bottom-full bottom-auto top-full mt-2 left-1/2 -translate-x-1/2 w-56 bg-slate-950 text-white text-xs px-4 py-3 rounded-xl border border-purple-700 z-20 shadow-lg"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
@@ -62,22 +68,22 @@ const SkillCard = ({ name, Icon, color, desc, delay }) => {
 
 const Skills = () => {
   return (
-    <section id="skills" className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-12 py-32 bg-slate-950 text-white overflow-hidden">
-      <BackgroundBeamsWithCollision className="w-full py-32 px-6 md:px-12 min-h-[100vh]">
+    <section id="skills" className="relative z-10 w-full bg-black text-white overflow-visible">
+      <BackgroundBeamsWithCollision className="w-full h-full px-6 md:px-12 py-24 md:py-32 overflow-visible">
         <div className="max-w-7xl mx-auto text-center">
           <motion.h2
-            className="text-3xl md:text-4xl font-bold mb-12 text-lime-400 font-mono"
+            className="text-3xl md:text-4xl font-bold mb-12 text-purple-400 font-mono"
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            $ skills --list
+            Skills
           </motion.h2>
 
           <motion.h3 className="text-xl font-semibold mb-6 text-purple-400">
             Proficient 🧠
           </motion.h3>
-          <div className="flex flex-wrap justify-center gap-6 mb-20">
+          <div className="flex flex-wrap justify-center gap-6 mb-24">
             {proficient.map((s, i) => (
               <SkillCard
                 key={i}
@@ -89,15 +95,6 @@ const Skills = () => {
               />
             ))}
           </div>
-                    {/* Glowing explosion at bottom
-          <div className="relative mt-32 flex justify-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.4 }}
-              animate={{ opacity: [0.3, 0.8, 0.1], scale: [0.4, 1.2, 0.8] }}
-              transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-              className="w-64 h-64 rounded-full bg-gradient-to-br from-purple-500 via-indigo-500 to-transparent blur-2xl"
-            />
-          </div> */}
 
           <motion.h3 className="text-xl font-semibold mb-6 text-purple-400">
             Currently Learning ⚡
@@ -114,8 +111,6 @@ const Skills = () => {
               />
             ))}
           </div>
-
-
         </div>
       </BackgroundBeamsWithCollision>
     </section>

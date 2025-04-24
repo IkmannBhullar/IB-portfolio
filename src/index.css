@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* index.css or tailwind.css */
+
+
 
 html {
   scroll-behavior: smooth;
@@ -20,5 +23,21 @@ html {
     gap: 1.2rem;
     justify-items: center;
     padding: 1rem;
+  }
+  
+  @keyframes pulse-ring {
+    0% {
+      box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(168, 85, 247, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(168, 85, 247, 0);
+    }
+  }
+  
+  .animate-pulse-ring {
+    animation: pulse-ring 2.5s cubic-bezier(0.66, 0, 0, 1) infinite;
   }
   

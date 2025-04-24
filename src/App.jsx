@@ -6,7 +6,6 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import AnimatedTooltipNav from './components/ui/AnimatedTooltipNav';
 import Contact from './components/Contact';
-import AnimatedCursor from 'react-animated-cursor';
 import './index.css'; // Tailwind styles
 
 function App() {
@@ -30,13 +29,12 @@ function App() {
       </section>
 
       <section id="skills" className="relative bg-black text-white">
-  <div className="pt-32 pb-64 px-6 md:px-12">
-      <Skills />
-      
-    
-  </div>
-</section>
-  <Contact />
+        <Skills />
+      </section>
+      <section id="contact" className="relative bg-black text-white">
+         <Contact />
+      </section>
+ 
       {/* Sticky Tooltip Nav Bar */}
       <AnimatedTooltipNav />
     </main>

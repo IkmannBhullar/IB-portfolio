@@ -7,6 +7,7 @@ import {
   FolderGit2,
   Hammer,
   Mail,
+  Download,
 } from "lucide-react";
 import { AnimatedTooltip } from "./animated-tooltip";
 
@@ -82,9 +83,7 @@ const AnimatedTooltipNav = () => {
   };
 
   return (
-    <div
-      className=" fixed left-6 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-6 bg-black/80 p-4 px-6 rounded-full shadow-xl backdrop-blur-md"
-    >
+    <div className="fixed left-6 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-6 bg-black/80 p-4 px-6 rounded-full shadow-xl backdrop-blur-md">
       {navItems.map((item) => (
         <div
           key={item.id}
@@ -106,6 +105,26 @@ const AnimatedTooltipNav = () => {
           </AnimatedTooltip>
         </div>
       ))}
+
+      {/* 📄 Resume Download */}
+      <a
+        href="../../../public/Bhullar_IkmannResume.pdf"
+        download
+        className="cursor-pointer text-white hover:text-green-400 transition mt-4"
+        title="Download Resume"
+      >
+        <AnimatedTooltip
+          items={[
+            {
+              id: 99,
+              name: "Resume",
+              designation: "Download CV",
+            },
+          ]}
+        >
+          <Download className="h-6 w-6" />
+        </AnimatedTooltip>
+      </a>
     </div>
   );
 };

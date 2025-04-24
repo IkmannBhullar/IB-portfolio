@@ -20,6 +20,8 @@ const Hero = () => {
         <ThemeToggle />
       </div>
 
+      
+
       {/* Hero Text */}
       <motion.div
         className="text-center z-10"
