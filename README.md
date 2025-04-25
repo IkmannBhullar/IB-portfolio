@@ -2,7 +2,7 @@
 
 Welcome to my interactive, animated portfolio site — built with a blend of cutting-edge tech and personalized style. Explore my featured projects, check out my skills, and feel free to reach out!
 
-🌐 **Live Site** → [ikmannbhullar.netlify.app](https://ikmannbhullar.netlify.app)  
+🌐 **Live Site** → [(https://ikmannbhullarportfolio.netlify.app/)]((https://ikmannbhullarportfolio.netlify.app/))  
 📄 **Resume** → Available via sidebar download (Updated April 2024)
 
 ---
