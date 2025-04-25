@@ -1,12 +1,92 @@
-# React + Vite
+# 🚀 Ikmann Bhullar — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my interactive, animated portfolio site — built with a blend of cutting-edge tech and personalized style. Explore my featured projects, check out my skills, and feel free to reach out!
 
-Currently, two official plugins are available:
+🌐 **Live Site** → [ikmannbhullar.netlify.app](https://ikmannbhullar.netlify.app)  
+📄 **Resume** → Available via sidebar download (Updated April 2024)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🎯 **Responsive Design**: Looks great on all screen sizes
+- 🌙 **Dark/Light Mode Toggle**: Personalized viewing experience
+- 🎨 **Framer Motion Animations**: Smooth transitions and entrance effects
+- 🛠️ **Skills Section**: 3D tilting cards, click-to-reveal tooltips, beam effects, parallax & confetti
+- 📬 **Email Contact Form**: Send real messages via **EmailJS**
+- 🧭 **Spotlight Cursor**: Custom glowing cursor effect on contact page
+- 🗺️ **Map Pinpoint**: Interactive Seattle marker or animated confirmation
+- 📥 **Resume Download**: Glowing icon + confetti celebration
+- 🧠 **Section-Aware Sidebar Navigation**: Tooltips and active tracking
+- ⚡ **Deployed on Netlify**: Fast and free static deployment
+
+---
+
+## 🧰 Built With
+
+- **React 19** + **Vite**
+- **Tailwind CSS**
+- **Framer Motion**
+- **EmailJS** for backend-free email submission
+- **Lucide-react** & **React Icons**
+- **Netlify** (for deployment)
+
+---
+
+## 🗂️ Project Structure
+
+```
+my-v2-portfolio/
+├── public/
+│   └── resume.pdf             # Resume file for download
+├── src/
+│   ├── assets/                # Project & section images
+│   ├── components/            # Navbar, Hero, Skills, Contact, etc.
+│   ├── ui/                    # Spotlight, Beams, Tooltip, Custom Effects
+│   └── App.jsx                # Main application logic
+├── index.html
+├── tailwind.config.js
+├── vite.config.js
+└── package.json
+```
+
+---
+
+## 🛠️ Getting Started
+
+Clone and run locally:
+
+```bash
+git clone https://github.com/IkmannBhullar/my-v2-portfolio.git
+cd my-v2-portfolio
+npm install
+npm run dev
+```
+
+---
+
+## 🚀 Deployment
+
+Deployed on **[Netlify](https://www.netlify.com/)**  
+Automatic rebuilds from GitHub — simple CI/CD setup
+
+---
+
+## 📫 Contact Me
+
+- 📧 Email: via Contact Form on site
+- 🐙 GitHub: [@IkmannBhullar](https://github.com/IkmannBhullar)
+- 🔗 LinkedIn: [@ikmannbhullar](https://linkedin.com/in/ikmannbhullar)
+- 🐦 Twitter: [@ikmannbhullar](https://twitter.com/ikmannbhullar)
+
+---
+
+## 🎉 Acknowledgements
+
+- UI Animations inspired by **Aceternity UI** and **Magic UI**
+- Cursor & parallax logic adapted from **Framer Motion** guides
+
+---
+
+> Built with love, curiosity, and an obsession for clean UI ✨
+"""
